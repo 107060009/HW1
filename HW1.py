@@ -33,7 +33,7 @@ with open(cwb_filename) as csvfile:
 
       data.append(row)
 
-ans = []
+answer = []
 
 #--------------------------------------------------------------------------------- 1
 target_data = list(filter(lambda item: item['station_id'] == 'C0A880', data))
@@ -52,7 +52,7 @@ for i in range(length):
 if((max == -99) or (max == -999)):
    max = 'None'
 
-ans.append(['C0A880',max])
+answer.append(['C0A880',max])
 
 #--------------------------------------------------------------------------------- 1
 
@@ -73,7 +73,7 @@ for i in range(length):
 if((max == -99) or (max == -999)):
    max = 'None'
 
-ans.append(['C0F9A0',max])
+answer.append(['C0F9A0',max])
 
 #--------------------------------------------------------------------------------- 2
 
@@ -96,7 +96,7 @@ for i in range(length):
 if((max == -99) or (max == -999)):
    max = 'None'
 
-ans.append(['C0G640',max])
+answer.append(['C0G640',max])
 
 #--------------------------------------------------------------------------------- 3
 
@@ -120,7 +120,7 @@ if((max == -99) or (max == -999)):
    max = 'None'
 
 
-ans.append(['C0R190',max])
+answer.append(['C0R190',max])
 
 
 #--------------------------------------------------------------------------------- 4
@@ -145,7 +145,7 @@ if((max == -99) or (max == -999)):
    max = 'None'
 
 
-ans.append(['C0X260',max])
-print(ans)
+answer.append(['C0X260',max])
+print(answer)
 
 #--------------------------------------------------------------------------------- 5
